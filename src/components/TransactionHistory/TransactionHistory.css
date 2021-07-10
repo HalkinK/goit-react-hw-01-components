@@ -1,0 +1,49 @@
+table {
+  border-spacing: 0;
+  empty-cells: hide;
+}
+td {
+  padding: 10px 20px;
+  text-align: center;
+  border-bottom: 1px solid #f4eee8;
+  transition: all 200ms linear;
+}
+td:first-child {
+  text-align: left;
+  color: #3d3511;
+  font-weight: bold;
+}
+th {
+  padding: 10px 20px;
+  color: #3d3511;
+  border-bottom: 1px solid #f4eee8;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+td:nth-child(even) {
+  background: #f6d27e;
+}
+td:nth-child(odd) {
+  background: #d1c7bf;
+}
+th:nth-child(even) {
+  background: #f6d27e;
+}
+th:nth-child(odd) {
+  background: #d1c7bf;
+}
+.round-top {
+  border-top-left-radius: 5px;
+}
+.round-bottom {
+  border-bottom-left-radius: 5px;
+}
+tr:hover td {
+  background: #d1c7bf;
+  font-weight: bold;
+}
+
+.transaction-history {
+  margin-left: auto;
+  margin-right: auto;
+}

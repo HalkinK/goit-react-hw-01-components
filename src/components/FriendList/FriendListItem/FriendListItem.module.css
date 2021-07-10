@@ -1,0 +1,31 @@
+.friendItem {
+  border: 1px solid black;
+  padding: 3px;
+  display: inline-block;
+  width: 100px;
+
+  margin-right: 5px;
+}
+
+.online {
+  composes: friendItem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  margin-right: 20px;
+}
+.offline {
+  composes: friendItem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 20px;
+}
+
+.friendName {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(118, 114, 114);
+}
