@@ -25,12 +25,19 @@
 // export default App;
 
 import React from "react";
+import Container from "./components/Container/Container";
 import { Profile } from "./components/Profile/Profile";
+import Statistics from "./components/Statistics/Statistics";
+import FriendList from "./components/FriendList/FriendList";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 import { avatar, name, tag, location, stats } from "./incomingdata/user.json";
+import statisticalData from "./incomingdata/statistical-data.json";
+import friends from "./incomingdata/friends.json";
+import transactions from "./incomingdata/transactions.json";
 
 const App = () => (
-  <div>
+  <Container>
     <Profile
       name={name}
       tag={tag}
@@ -38,7 +45,10 @@ const App = () => (
       avatar={avatar}
       stats={stats}
     />
-  </div>
+    <Statistics title="Upload stats" stats={statisticalData} />
+    <FriendList friends={friends} />
+    <TransactionHistory items={transactions} />
+  </Container>
 );
 
 export default App;
